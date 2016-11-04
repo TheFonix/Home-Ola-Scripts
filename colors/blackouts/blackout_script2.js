@@ -1,5 +1,5 @@
 var options = {
-    host: '10.0.0.11'
+    host: '192.168.1.90'
 }
 
 var artnet = require('artnet')(options);
