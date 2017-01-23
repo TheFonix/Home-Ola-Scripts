@@ -3,7 +3,10 @@
 //▒█░░░ ▒█▄▄▄█ ▒█░░▀█ ▄█▄ ▄▀▒▀▄
 //Connection to the Arnet Server
 var options = {
-    host: '10.0.0.19'
+    host: '10.0.0.28' //PI-LC
+};
+var options = {
+    host: '10.0.0.30' //NOX-LC
 };
 //Check for the Artnet NPM Deps
 var artnet = require('artnet')(options);
@@ -13,8 +16,17 @@ function fadeUp(ms) {
   var time = Math.floor(ms / (255 / step));
   var val = 260;
   var interval = setInterval(function () {
-    //Define Values Here
-    artnet.set(1, [val, null, null, null, null, null, val, val, null, null]);
+    artnet.set(1, [null, null, null, val, val, null, null, null]); //CAN-1
+
+    artnet.set(9, [null, null, null, val, val, null, null, null]); //CAN-2
+
+    artnet.set(17, [null, null, null, val, val, null, null, null]); //CAN-3
+
+    artnet.set(25, [null, null, null, val, val, null, null, null]); //CAN-4
+
+    artnet.set(33, [val, null, null]); //CAN-BG
+
+    artnet.set(37, [val, null, null]); //LED-BED
 
     val -= step;
     if (val < -5) {

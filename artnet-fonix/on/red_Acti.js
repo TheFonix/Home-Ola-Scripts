@@ -3,8 +3,10 @@
 //▒█░░░ ▒█▄▄▄█ ▒█░░▀█ ▄█▄ ▄▀▒▀▄
 //Connection to the Arnet Servers
 var options = {
-    host: 'NOX'; //NOX-LC
-    host: 'PI' //PI-LC
+    host: '10.0.0.28' //PI-LC
+};
+var options = {
+    host: '10.0.0.30' //NOX-LC
 };
 
 //Check for the Artnet NPM Deps
@@ -22,13 +24,13 @@ function fadeUp(ms) {
 
     artnet.set(9, [null, null, null, val, val, null, null, null]); //CAN-2
 
-    artnet.set(18, [null, null, null, val, val, null, null, null]); //CAN-3
+    artnet.set(17, [null, null, null, val, val, null, null, null]); //CAN-3
 
-    artnet.set(27, [null, null, null, val, val, null, null, null]); //CAN-4
+    artnet.set(25, [null, null, null, val, val, null, null, null]); //CAN-4
 
-    artnet.set(36, [val, null, null]); //CAN-BG
+    artnet.set(33, [val, null, null]); //CAN-BG
 
-    artnet.set(39, [val, null, null]); //LED-BED
+    artnet.set(37, [val, null, null]); //LED-BED
 
     //Math-Fade
     val += step;

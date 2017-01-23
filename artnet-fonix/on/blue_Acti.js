@@ -3,9 +3,12 @@
 //▒█░░░ ▒█▄▄▄█ ▒█░░▀█ ▄█▄ ▄▀▒▀▄
 //Connection to the Arnet Servers
 var options = {
-    host: '10.0.0.30'; //NOX-LC
     host: '10.0.0.28' //PI-LC
 };
+var options = {
+    host: '10.0.0.30' //NOX-LC
+};
+
 
 //Check for the Artnet NPM Deps
 var artnet = require('artnet')(options);
@@ -22,17 +25,17 @@ function fadeUp(ms) {
 
     artnet.set(9, [null, null, null, val, null, null, val, null]); //CAN-2
 
-    artnet.set(18, [null, null, null, val, null, null, val, null]); //CAN-3
+    artnet.set(17, [null, null, null, val, null, null, val, null]); //CAN-3
 
-    artnet.set(27, [null, null, null, val, null, null, val, null]); //CAN-4
+    artnet.set(25, [null, null, null, val, null, null, val, null]); //CAN-4
 
-    artnet.set(36, [null, null, val]); //CAN-BG
+    artnet.set(33, [null, null, val]); //CAN-BG
 
-    artnet.set(39, [null, null, val]); //LED-BED
+    artnet.set(37, [null, null, val]); //LED-BED
 
     //Math-Fade
     val += step;
-    if (val > 260) {
+    if (val > 255) {
       clearInterval(interval);
       artnet.close();
     }
