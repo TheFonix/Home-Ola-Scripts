@@ -29,7 +29,7 @@ function fadeUp(ms) {
     artnet.set(37, [val, null, null]); //LED-BED
 
     val -= step;
-    if (val < -5) {
+    if (val < 127) {
       clearInterval(interval);
       artnet.close();
     }
