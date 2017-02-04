@@ -3,19 +3,19 @@
 //▒█░░░ ▒█▄▄▄█ ▒█░░▀█ ▄█▄ ▄▀▒▀▄
 //Connection to the Arnet Server
 var options = {
-    host: '10.0.0.28' //PI-LC
+    host: 'localhost' //NOX-LC
 };
-var options = {
-    host: '10.0.0.30' //NOX-LC
-};
+
 //Check for the Artnet NPM Deps
 var artnet = require('artnet')(options);
+
 //Init Fade
 function fadeUp(ms) {
   var step = 5;
   var time = Math.floor(ms / (255 / step));
   var val = 260;
   var interval = setInterval(function () {
+    //Define Values Here
     artnet.set(1, [null, null, null, val, val, null, null, null]); //CAN-1
 
     artnet.set(9, [null, null, null, val, val, null, null, null]); //CAN-2

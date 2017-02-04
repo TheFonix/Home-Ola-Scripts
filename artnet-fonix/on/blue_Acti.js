@@ -3,12 +3,8 @@
 //▒█░░░ ▒█▄▄▄█ ▒█░░▀█ ▄█▄ ▄▀▒▀▄
 //Connection to the Arnet Servers
 var options = {
-    host: '10.0.0.28' //PI-LC
+    host: 'localhost' //NOX-LC
 };
-var options = {
-    host: '10.0.0.30' //NOX-LC
-};
-
 
 //Check for the Artnet NPM Deps
 var artnet = require('artnet')(options);
