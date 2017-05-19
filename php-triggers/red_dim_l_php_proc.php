@@ -11,7 +11,7 @@ echo "PROQ Local >";
 
 
 //Send the REQ to the Networked Artnet Client
-exec('bash -c "exec nohup setsid nodejs /home/fonix/artnet-fonix/PI-D/dim/red_Dim.js > /dev/null 2>&1 &"');
+exec('bash -c "exec nohup setsid nodejs /home/fonix/artnet-fonix/B-PI/dim/red_Dim.js > /dev/null 2>&1 &"');
 echo "PROQ Networked >";
 
 //Completed Script Read Off
