@@ -16,13 +16,13 @@ function fadeUp(ms) {
   var val = 260;
   var interval = setInterval(function () {
     //Define Values Here
-    artnet.set(1, [null, null, null, val, null, null, val, null]); //CAN-1
+    artnet.set(1, [null, null, null, null, null, null, null, null]); //CAN-1
 
-    artnet.set(9, [null, null, null, val, null, null, val, null]); //CAN-2
+    artnet.set(9, [null, null, null, null, null, null, null, null]); //CAN-2
 
-    artnet.set(17, [null, null, null, val, null, null, val, null]); //CAN-3
+    artnet.set(17, [null, null, null, null, null, null, null, null]); //CAN-3
 
-    artnet.set(25, [null, null, null, val, null, null, val, null]); //CAN-4
+    artnet.set(25, [null, null, null, null, null, null, null, null]); //CAN-4
 
     artnet.set(33, [val, null, val]); //CAN-BG
 
