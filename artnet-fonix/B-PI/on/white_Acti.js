@@ -27,7 +27,7 @@ function fadeUp(ms) {
 
     artnet.set(33, [null, null, null]); //CAN-BG
 
-    artnet.set(37, [null, null, null]); //LED-BED
+    artnet.set(37, [val, val, val]); //LED-BED
 
     //Math-Fade
     val += step;
