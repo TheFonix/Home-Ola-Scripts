@@ -3,7 +3,7 @@
 //▒█░░░ ▒█▄▄▄█ ▒█░░▀█ ▄█▄ ▄▀▒▀▄
 //Connection to the Arnet Server
 var options = {
-    host: 'localhost' //PI-U
+    host: 'u-pi' //PI-U
 };
 
 //Check for the Artnet NPM Deps
@@ -22,14 +22,12 @@ function fadeUp(ms) {
 
     artnet.set(17, [null, null, null, val, val, null, null, null]); //CAN-3
 
-    artnet.set(25, [null, null, null, val, val, null, null, null]); //CAN-4
-
-    artnet.set(33, [val, null, null]); //CAN-BG
+    artnet.set(33, [null, null, null]); //CAN-BG
 
     artnet.set(37, [val, null, null]); //LED-BED
 
     val -= step;
-    if (val < 127) {
+    if (val < 40) {
       clearInterval(interval);
       artnet.close();
     }

@@ -3,7 +3,7 @@
 //▒█░░░ ▒█▄▄▄█ ▒█░░▀█ ▄█▄ ▄▀▒▀▄
 //Connection to the Arnet Servers
 var options = {
-    host: 'localhost' //PI-U
+    host: 'u-pi' //PI-U
 };
 
 //Check for the Artnet NPM Deps
@@ -22,8 +22,6 @@ function fadeUp(ms) {
     artnet.set(9, [null, null, null, val, null, val, null, null]); //CAN-2
 
     artnet.set(17, [null, null, null, val, null, val, null, null]); //CAN-3
-
-    artnet.set(25, [null, null, null, val, null, val, null, null]); //CAN-4
 
     artnet.set(33, [null, val, null]); //CAN-BG
 
