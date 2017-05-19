@@ -3,7 +3,7 @@
 //▒█░░░ ▒█▄▄▄█ ▒█░░▀█ ▄█▄ ▄▀▒▀▄
 //Connection to the Arnet Servers
 var options = {
-    host: 'u-pi' //PI-U
+    host: 'u-pi' //U-PI
 };
 
 //Check for the Artnet NPM Deps

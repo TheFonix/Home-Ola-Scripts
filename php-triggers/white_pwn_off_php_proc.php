@@ -6,7 +6,7 @@ error_reporting(E_ALL);
 echo "REQ";
 
 //Send REQ to the Local Artnet Client
-exec('bash -c "exec nohup setsid nodejs /home/fonix/artnet-fonix/PI-U/off/white_Deac.js > /dev/null 2>&1 &"');
+exec('bash -c "exec nohup setsid nodejs /home/fonix/artnet-fonix/U-PI/off/white_Deac.js > /dev/null 2>&1 &"');
 echo "PROQ Local >";
 
 

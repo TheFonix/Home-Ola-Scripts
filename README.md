@@ -9,7 +9,7 @@ The entire process is handled pretty easily, i give the command to turn on the l
 ## My Setup
 ##### _Networking:_
 * Alexa = Amazon Echo Dot
-* Node 1 = Raspberry Pi 3 (Rasbian Wheezy) (PI-U)
+* Node 1 = Raspberry Pi 3 (Rasbian Wheezy) (U-PI)
 * Node 2 = Raspberry Pi 3 (Rasbian Wheezy) (PI-D)
 * DMX Converters = K8062 USB Controlled DMX x2
 * Router = NightHawk X6 (DD-WRT)

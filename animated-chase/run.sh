@@ -16,14 +16,14 @@ do
 
   #Red SOLID
   nodejs /home/fonix/animated-chase/PI-D-ALL-SOLID/RED-PI-D.js
-  nodejs /home/fonix/animated-chase/PI-U-ALL-SOLID/RED-PI-D.js
+  nodejs /home/fonix/animated-chase/U-PI-ALL-SOLID/RED-PI-D.js
 
   echo"Sleeping after PI-D/U-RED - Give me a second!"
   sleep 1
 
   #Green SOLID
   nodejs /home/fonix/animated-chase/PI-D-ALL-SOLID/GREEN-PI-D.js
-  nodejs /home/fonix/animated-chase/PI-U-ALL-SOLID/GREEN-PI-D.js
+  nodejs /home/fonix/animated-chase/U-PI-ALL-SOLID/GREEN-PI-D.js
 
 
   echo"Sleeping after PI-D/U-GREEN - Give me a second!"
@@ -31,14 +31,14 @@ do
 
   #Blue SOLID
   nodejs /home/fonix/animated-chase/PI-D-ALL-SOLID/BLUE-PI-D.js
-  nodejs /home/fonix/animated-chase/PI-U-ALL-SOLID/BLUE-PI-D.js
+  nodejs /home/fonix/animated-chase/U-PI-ALL-SOLID/BLUE-PI-D.js
 
   echo"Sleeping after PI-D/U-BLUE - Give me a second!"
   sleep 1
 
   #White SOLID
   nodejs /home/fonix/animated-chase/PI-D-ALL-SOLID/WHITE-PI-D.js
-  nodejs /home/fonix/animated-chase/PI-U-ALL-SOLID/WHITE-PI-D.js
+  nodejs /home/fonix/animated-chase/U-PI-ALL-SOLID/WHITE-PI-D.js
 
   echo"Sleeping after PI-D/U-WHITE - Give me a second!"
   sleep 1
@@ -47,25 +47,25 @@ do
   echo"Solid Colors complete 1/2"
 
   nodejs /home/fonix/animated-chase/PI-D-ALL-SOLID/RED-PI-D.js
-  nodejs /home/fonix/animated-chase/PI-U-ALL-SOLID/RED-PI-D.js
+  nodejs /home/fonix/animated-chase/U-PI-ALL-SOLID/RED-PI-D.js
 
   echo"Sleeping after PI-D/U-RED - Give me a second!"
   sleep 1
 
   nodejs /home/fonix/animated-chase/PI-D-ALL-SOLID/GREEN-PI-D.js
-  nodejs /home/fonix/animated-chase/PI-U-ALL-SOLID/GREEN-PI-D.js
+  nodejs /home/fonix/animated-chase/U-PI-ALL-SOLID/GREEN-PI-D.js
 
   echo"Sleeping after PI-D/U-GREEN - Give me a second!"
   sleep 1
 
   nodejs /home/fonix/animated-chase/PI-D-ALL-SOLID/BLUE-PI-D.js
-  nodejs /home/fonix/animated-chase/PI-U-ALL-SOLID/BLUE-PI-D.js
+  nodejs /home/fonix/animated-chase/U-PI-ALL-SOLID/BLUE-PI-D.js
 
   echo"Sleeping after PI-D/U-BLUE - Give me a second!"
   sleep 1
 
   nodejs /home/fonix/animated-chase/PI-D-ALL-SOLID/WHITE-PI-D.js
-  nodejs /home/fonix/animated-chase/PI-U-ALL-SOLID/WHITE-PI-D.js
+  nodejs /home/fonix/animated-chase/U-PI-ALL-SOLID/WHITE-PI-D.js
 
   echo"Sleeping after PI-D/U-WHITE - Give me a second!"
   sleep 1
