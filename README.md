@@ -26,3 +26,5 @@ The entire process is handled pretty easily, i give the command to turn on the l
 ###### Alexa / Home Asistant --> HABridge --> PHP Triggers --> Artnet Nodes --> DMX Converters --> Fixtures
 
 [![OLA](https://i.imgur.com/Ergpbs6.png)](https://fonix.online)
+
+OUTDATED
